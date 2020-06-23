@@ -1,0 +1,339 @@
+/* Master styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body { 
+    margin: 0px;
+}
+
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+.container {
+    max-width:1100 px;
+    margin: auto;
+}
+
+
+/* nav bar */
+#navbar{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    overflow: hidden;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color:white;
+    padding: 15px;
+    z-index: 1;
+    
+}
+
+#navbar:hover{
+background-color:black;
+transition: 0.5s;
+ 
+}
+#navbar::before a{
+    top: 48px; /* 64 - 16 */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+   }
+    
+   #navbar::after a{
+    background: linear-gradient(white, rgba(255,255,255,0.3));
+    top: 0;
+    z-index: 2;
+   }
+    
+
+.text-primary{
+    color: white;
+}
+   
+
+.nav-left-side a{ 
+
+    color: rgba(255, 255, 255, 0.363);
+    font-size: 1.3em;
+    padding: 1em;
+    transition: color 0.5s;
+}
+
+.nav-left-side a:hover{            /*hover effect for nav-bar*/
+    color: white;
+}
+
+.nav-right-side a{
+    align-items: center;
+    color: rgba(255, 255, 255, 0.363);
+    font-size: 2em;
+    padding: 1em;
+    transition: color 0.5s;
+}
+.nav-right-side a:hover{
+    color: white;
+}
+
+
+
+
+/* Showcase area */
+
+#showcase {
+    background: url(../hongkongharbour.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+#showcase::before{
+    display: block;
+    content: " ";
+    margin-top: 0px;
+    height: 65px;
+    visibility: hidden;
+}
+
+
+.showcase-content{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    bottom:0px;
+    right:0;
+    left:0;
+    background: rgba(0,0,0,0.4);
+    color: white;
+ 
+    
+}
+
+.showcase-content h1{
+    font-size: 5em;
+    font-family: "proxima-nova";
+    color:white;
+
+}
+
+.showcase-content h2{
+    padding-top:30px;
+    font-family: "proxima-nova";
+}
+
+
+/*About section*/
+#about{
+    padding: 5rem 0;
+    background-color: rgb(12, 70, 104);
+}
+#about::before{
+    display: block;
+    content: " ";
+    margin-top: 0px;
+    height: 65px;
+    visibility: hidden;
+}
+#about h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: -50px;
+
+}
+
+
+
+#about .about-content{
+    display:flex;
+    margin-bottom: 70px;
+}
+
+.about-content {
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-top: 100px;
+}
+
+
+
+#about .about-image img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    width: 20%;
+    margin-bottom: 20px;
+
+
+}
+/* What I Do Section */
+#passions {
+    padding-top: 120px;
+    padding-bottom:10px;
+    background-color: rgb(50, 140, 193);
+}
+
+#passions h2{
+    text-align:center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    margin-top:-50px;
+}
+
+#passions h3{
+    text-align:center;
+    font-size: 2rem;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.passions-content {
+    display:grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1px;
+    padding-left: 0px;
+}
+
+/*flip card*/
+.flipcard{
+    perspective: 80px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.flip-card-inner{
+    position:relative;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d
+}
+.flip-card:hover .flip-card-inner{
+   cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-black{
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 350px;
+    height: 400px;
+    box-shadow: 3px 3px 6px #000000;
+
+}
+
+.flip-card-front{
+    background-color: white;
+    color:black;
+    width: 350px;
+    height: 400px;
+}
+.flip-card-front i{
+    font-size: 120px;
+    margin-top:120px;
+    text-align: center;
+  
+}
+
+.flip-card-back{
+    background-color: white;
+    color: white;
+    width: 350px;
+    height: 400px;
+    transform: rotateY(180deg);
+    box-shadow: 2px 2px 6px #000000;
+  
+
+}
+
+.flip-card-back h1{
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+}
+
+
+.flip-card-back p{
+    color:black;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.flip-card-back p2{ 
+    color:black;
+    margin-bottom: 50px;
+}
+
+
+/*projects section*/
+
+#projects{
+    padding-bottom: 30px;
+    background-color: rgb(50, 140, 193);
+}
+
+#projects h3{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+
+#contact{
+    padding:240px;
+    background-color:rgb(0, 65, 206);
+}
+
+#contact h1{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 30px;
+    margin-top:-50px;
+}
+
+.contact-content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+.media a{
+    font-size: 40px;
+    color: white;
+}
+
+.download {
+
+    color:white;
+    background-color:dodgerblue;
+    padding: 12px 15px;
+    height: 50%;
+}
+.download a{
+    text-align: center;
+    font-size: 20px;
+}
+
+.download i{
+    text-align: center;
+}
