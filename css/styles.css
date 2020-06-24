@@ -210,7 +210,6 @@ transition: 0.5s;
 
 /*flip card*/
 .flipcard{
-    perspective: 80px;
     position: relative;
     margin-right: 30px;
 }
