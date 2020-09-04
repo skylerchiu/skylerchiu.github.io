@@ -4,8 +4,8 @@
         <meta charset = "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Skyler Chiu</title>
-        <link rel = "stylesheet" href = "/css/styles.css">
-        <link rel="shortcut icon" type="image/ico" href="/images/favicon.ico"/>
+        <link rel = "stylesheet" href = "styles.css">
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
         <script src="https://kit.fontawesome.com/4de0651129.js" crossorigin="anonymous"></script>
       
     </head>
@@ -13,26 +13,30 @@
     <body>
         <div class= "container" >
             <!-- Navigation Bar-->
-           <nav id = "navbar">
+           <nav class = "navbar" id = "myNavbar">
                 <div class = "nav-left-side">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
                      <a href = "#showcase"> HOME</a>
-                     <a href = "#about"> ABOUT</a>
+                     <a href = "home.html#about"> ABOUT</a>
                      <a href = "#whatIdo"> WHAT I DO</a>
-                     <a href = "#resume"> RESUME</a>
-                     <a href = "#contact"> CONTACT </a>
-                    
+                     <a href = resume.html> RESUME</a>
+                     <a href = "#contact"> PHOTOS </a>  
                 </div>
                 <div class = "nav-right-side">
-                    <a href = "https://www.linkedin.com/in/skyler-chiu/" target ="_blank"><i class="fab fa-linkedin"></i> </a>
-                       <a href= "mailto:s35chiu@uwaterloo.ca"><i class="fas fa-envelope-square"></i></a>
+
                 </div>
            </nav> 
+
 <!-- Showcase Area-->
         <header id = "showcase">
             <div class = "showcase-content">
                 <div class = "container">
                     <h1>SKYLER CHIU</h1>
-                    <h2> -- A little bit about me -- </h2>
+                    <div class = "h2-container">
+                        <h2> -- Here's a little bit about me -- </h2>
+                    </div>
                 </div>
             </div>
         </header>
@@ -41,21 +45,35 @@
             <div class = "container">
                 <h2> About<a> <span class = "text-primary">Me</span>   </a></h2>
                 <div class = "about-image">
-                    <img src = "/images/profile.jpg">
+                    <img src = "profile.jpg">
                 </div>
                 <div class = "about-content">
-                     <h3> Hi! My name is Skyler Chiu and I am an incoming Sytems Design Engineering Student at the University of Waterloo in the fall of 2020.
-                         <br> <br> <br> <br> Here are somethings I would like to share about myself </h3>
+                     <h3> <b>Hi! My name is Skyler Chiu and I am an incoming Sytems Design Engineering Student at the University of Waterloo in the fall of 2020.
+                         I am a proud Chinese-Canadian from Markham, Ontario interested in a variety of things, from sports to sneakers and business. You'll often see me at
+                        the park playing basketball or throwing a disk aroud with my friends, trying to learn a new programming language online or . I love meeting new people, so feel 
+                    free to message me!</b>
+
+                    <div class = "media-container">
+                        <a href = "https://github.com/skylerchiu/skylerchiu.github.io" target = "blank"><i class="fab fa-github-square"></i></a>
+                        <a href= "mailto:s35chiu@uwaterloo.ca"><i class="fas fa-envelope-square"></i></a>
+                        <a href = "https://www.facebook.com/skylerchiuu/" target = "blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href = "https://www.instagram.com/skyler.chiuu/" target = "blank"> <i class="fab fa-instagram-square"></i></a>
+                        <a href = "https://twitter.com/skyler_chiu" target = "blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href = "https://www.linkedin.com/in/skyler-chiu/" target ="_blank"><i class="fab fa-linkedin"></i> </a>
+                      
+                    </div>
+                 
 
                 </div>
             </div>
            
         </section>
+    
 <!-- Passions Section-->
 
         <section id = "whatIdo">
             <div class = "container">
-                <h2>What I Do</h2>
+                <h2>What I've Been Up To</h2>
                 <h3>Some of my <br>Passions and Expiriences</h3>
                 <div class = "whatIdo-content">
 
@@ -75,7 +93,7 @@
                                 <h1>Business
                                 & Entrepreneurship</h1>
                             <p>I love exploring the concepts of business, especially in the field of entrepreneurship. Along side my participation and success in business case competitions, such as DECA, where I earned the title of Provincial Champion, I have also founded a successful startup in selling sneakers.
-                                 Under the name of 'Shoedog Toronto', this startup business has generated over $7000 in sales in 2020.  
+                                 Under the name of 'Shoedog Toronto', this startup business has generated over $18,000 in sales in 2020.  
                                 <br> You can check out Shoedog Toronto <a href = https://www.instagram.com/shoedog_to/ target = "blank_"> here</a></p> </div>
                         </div>
                     </label>
@@ -165,7 +183,8 @@
                                 </div>
                                 <div class="back">
                                     <h1>Collaboration & Communication</h1>
-                                <p> I love working with people
+                                <p> I love working and interacting with people. <br>
+                                    Being a rather social and talkative person myself, I find a lot
                                      </p>
                             </div>
                         </div>
@@ -193,50 +212,6 @@
             </div>
         </section>
 
-<!--Resume Section -->
-
-        <section>
-            <section id = "resume">
-                <div class = "container">
-                    <h1>Resume</h1>
-                    <hr>
-                    <div class = "resume-content">
-                        <div class = "education">
-                            <div class = "title-block">
-                                 <i class="fas fa-school"></i> 
-                                 <a> Education </a>
-                             </div>
-                            <h3>University of Waterloo 2020-Present</h3>
-                                <li>Candidate for Bachelor of Applied Science</li>
-                            <h3>Unionville High School 2016-2020</h3>
-                                <li>Activities include DECA, varsity sports, athletic council</li>
-                        </div>
-                      
-                        <div class = "expirience">
-                            <div class = "title-block">
-                                <a>Expirience</a>
-                            </div>
-                            <h3> Private Tutor </h3>
-                            <h3> Private Badminton Coach</h3>
-                            <h3> Assistant Badminton Coach</h3>
-                        </div>
-                        <div class = "awards">
-                            <h2>Awards and Accolades</h2>
-                            <h3> DECA Ontario Provincial Champion 2020
-                                <br> Unionville High School Athletic Senior Letter
-                                <br> Certificates of Distinction </h3>
-                        </div>
-                        <div class = "projects">
-                            <h2>Projects</h2>
-                            <h3>skylerchiu.github.io</h3>
-                            <h3>Shoedog Toronto</h3>
-                        </div>
-                            
-                    </div>
-                </div>
-
-            </section>
-        </section>
 
         <section>
             <section id = "contact">
@@ -258,12 +233,35 @@
 
                 </div>
             </section>
+        </section>
+
+                <section id = "footer">
+                    <div class = "container">
+                        <div class = "footer-left">
+                            <a href = https://www.linkedin.com/in/skyler-chiu/ target = "blank"> LinkedIn</a>     
+                        </div>
+                        <div class = "footer-right">
+                            <p>Built from scratch by Skyler Chiu © 2020 </p>
+                        </div>
+                    </div>
+
+               
+            </section>
  
-
-
-
         
 
         </div>
     </body>
 </html>
+
+<script>
+    function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+
+</script>
