@@ -358,7 +358,7 @@ font-size: 13vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: space-evenly;
-    margin: 10vw;
+    margin: auto;
 }
 
 .interests{
@@ -366,7 +366,7 @@ font-size: 13vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: space-evenly;
-    margin: 10vw;
+    margin: auto;
 }
 
 @media (max-width: 768px){
