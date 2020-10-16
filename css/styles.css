@@ -32,7 +32,7 @@ html{
     background-color: transparent;
     color:white;
     padding: 2.8vh;
-    z-index: 1; /*sets z-index to 1, putting it ontop of the other content*/
+    z-index: 1 /*sets z-index to 1, putting it ontop of the other content*/
     overflow: hidden;
     transition: 0.3s;
 }
@@ -97,7 +97,7 @@ transition: 0.5s;
 
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .navbar.responsive {position: relative;} 
  .navbar.responsive{
     background-color: rgb(255, 203, 154);
@@ -107,7 +107,7 @@ transition: 0.5s;
     position: relative;
     right: 0;
     top: 0;
-    z-index: 4;
+    z-index: 20;
   }
   .navbar.responsive a {
     float: none;
