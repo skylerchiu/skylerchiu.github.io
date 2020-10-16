@@ -694,6 +694,9 @@ font-size: 13vh;
     .info-box{
         width:40vh;
     }
+    
+    .info-box-long {
+        width: 40vh;
 
 }
 .info-box:hover{
