@@ -32,7 +32,7 @@ html{
     background-color: transparent;
     color:white;
     padding: 2.8vh;
-    z-index: 1 /*sets z-index to 1, putting it ontop of the other content*/
+    z-index: 30 /*sets z-index to 1, putting it ontop of the other content*/
     overflow: hidden;
     transition: 0.3s;
 }
@@ -696,7 +696,7 @@ font-size: 13vh;
     
     .info-box-long {
         width: 40vh;
-
+    }
 }
 .info-box:hover{
     box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2), 0 22px 36px 0 rgba(0, 0, 0, 0.19);
