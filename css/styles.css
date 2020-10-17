@@ -32,7 +32,7 @@ html{
     background-color: transparent;
     color:white;
     padding: 2.8vh;
-    z-index: 30 /*sets z-index to 1, putting it ontop of the other content*/
+    z-index: 30; /*sets z-index to 1, putting it ontop of the other content*/
     overflow: hidden;
     transition: 0.3s;
 }
