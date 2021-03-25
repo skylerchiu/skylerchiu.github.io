@@ -1,250 +1,627 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset = "utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Skyler Chiu</title>
-        <link rel = "stylesheet" href = "/css/styles.css">
-        <link rel="shortcut icon" type="image/ico" href="/images/favicon.ico"/>
-        <script src="https://kit.fontawesome.com/4de0651129.js" crossorigin="anonymous"></script>
-      
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Skyler Chiu</title>
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.css" />
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/ico" href="icon.ico"/>
+   <!-- <script src="https://kit.fontawesome.com/4de0651129.js" crossorigin="anonymous"></script> -->
 
-    <body>
-        <div class= "container" >
-            <!-- Navigation Bar-->
-           <nav class = "navbar" id = "myNavbar">
-                <div class = "nav-left-side">
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                      </a>
-                     <a href = "#showcase"> HOME</a>
-                     <a href = "index.html#about"> ABOUT</a>
-                     <a href = "#whatIdo"> WHAT I DO</a>
-                     <a href = resume.html> RESUME</a>
-                     <a href = "photos.html"> PHOTOS </a>  
-                </div>
-                <div class = "nav-right-side">
-                </div>
-           </nav> 
+  </head>
+  <body>    
+    <!-- Hero section -->
+    <section id="hero" class="text-white tm-font-big tm-parallax">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+        <div class="container">   
+          <div class="tm-next">
+              <a href="#hero" class="navbar-brand"></a>
+          </div>             
+            
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#introduction">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#work">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="#photos">Photos</a>
+          </li>       
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#contact">Contact</a>
 
-<!-- Showcase Area-->
-        <header id = "showcase">
-            <div class = "showcase-content">
-                <div class = "container">
-                    <h1>SKYLER CHIU</h1>
-                    <div class = "h2-container">
-                        <h2> -- Here's a little bit about me -- </h2>
-                    </div>
-                </div>
-            </div>
-        </header>
-<!-- About Section-->
-        <section id = "about">
-            <div class = "container">
-                <h2> About<a> <span class = "text-primary">Me</span>   </a></h2>
-                <div class = "about-image">
-                    <img src = "/images/profile.jpg">
-                </div>
-                <div class = "about-content">
-                     <h3> <b>Hi! My name is Skyler Chiu and I am a first-year Sytems Design Engineering Student at the University of Waterloo.
-                         As a proud Chinese-Canadian from Markham, Ontario, I am often found coaching badminton, tutoring grade-school math or selling the newest hyped sneakers.
-                         When I am not busy running these small private businesses, you can find me trying to learn a new programming language off YouTube
-                         or simply playing basketball and Ultimate Frisbee with my friends at the park.
-                         
-                        <br> <br> I love meeting new people, and so feel free to send me an email or a message! <br> <br></b>
-
-                    <div class = "media-container">
-                        <a href = "https://github.com/skylerchiu/skylerchiu.github.io" target = "blank"><i class="fab fa-github-square"></i></a>
-                        <a href = "https://www.linkedin.com/in/skyler-chiu/" target ="_blank"><i class="fab fa-linkedin"></i> </a>
-                      
-                    </div>
-                 
-
-                </div>
-            </div>
-           
-        </section>
-    
-<!-- Passions Section-->
-
-        <section id = "whatIdo">
-            <div class = "container">
-                <h2> What <a> <span class = "text-primary">I do</span>   </a></h2>
-                <h3>Top Skills</h3>
-                <div class = "whatIdo-content">
-                    <div class = "top-skills">
-                        <div class = skill>
-                            <div class = "icon-box-container">
-                                <div class = icon-box>
-                                    <div class = "inner-icon-box">
-                                        <div class = "skill-icon">
-                                            <i class="fas fa-code"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                              
-                            </div>
-                            <h4> Development </h4>
-                            <h5> HTML, CSS, Java and now learning <br> Python, C++ and JavaScipt </h5>
-                        </div>
-
-                        <div class = skill>
-                            <div class = "icon-box-container">
-                                <div class = icon-box>
-                                    <div class = "inner-icon-box">
-                                        <div class = "skill-icon">
-                                            <i class="fas fa-chalkboard-teacher"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4> Teaching & Coaching </h4>
-                            <h5> A regionally-trained badminton coach and an occasional math tutor </h5> 
-                        </div>
-                        <div class = skill>
-                            <div class = "icon-box-container">
-                                <div class = icon-box>
-                                    <div class = "inner-icon-box">
-                                        <div class = "skill-icon">
-                                            <i class="fas fa-poll"></i>
-                                        </div>
-                                    </div>
-                             
-                                </div>
-                            </div>
-                            <h4> Social Media Marketing </h4>
-                            <h5> To reach audiences through engaging <br> advertisements and designs </h5>
-                        </div>
-                            <div class = skill>
-                            <div class = "icon-box-container">
-                                <div class = icon-box>
-                                    <div class = "inner-icon-box">
-                                        <div class = "skill-icon">
-                                            <i class="fas fa-language"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4> Spoken Languages</h4>
-                            <h5> Fully fluent in <br> English and Cantonese </h5>
-                        </div>
-                    </div>
-
-                <h3>Other Interests </h3>
-
-                <div class = "interests">
-           
-                    <div class = skill>
-                        <div class = "icon-box-container">
-                            <div class = icon-box>
-                                <div class = "inner-icon-box">
-                                    <div class = "skill-icon">
-                                        <i class="fas fa-basketball-ball"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <h4> Basketball </h4>
-                        <h5>Let's go Raptors!</h5>
-                    </div>
-
-                    <div class = skill>
-                        <div class = "icon-box-container">
-                            <div class = icon-box>
-                                <div class = "inner-icon-box">
-                                    <div class = "skill-icon">
-                                        <i class="fas fa-chart-line"></i>
-                                    </div>
-                                </div>
-                         
-                            </div>
-                        </div>
-                        <h4> Stock Trading </h4>
-                        <h5> Hoping to be the next Warren Buffett! </h5>
-                    </div>
-                    <div class = skill>
-                        <div class = "icon-box-container">
-                            <div class = icon-box>
-                                <div class = "inner-icon-box">
-                                    <div class = "skill-icon">
-                                        <i class="fas fa-plane"></i>
-                                    </div>
-                                </div>
-                         
-                            </div>
-                        </div>
-                        <h4> Travelling </h4>
-                        <h5> Exploring the world. One city at a time</h5>
-                    </div>
-                        <div class = skill>
-                        <div class = "icon-box-container">
-                            <div class = icon-box>
-                                <div class = "inner-icon-box">
-                                    <div class = "skill-icon">
-                                        <i class="fas fa-biking"></i>
-                                    </div>
-                                </div>
-                         
-                            </div>
-                        </div>
-                        <h4> Cycling </h4>
-                        <h5> The best way of getting around.</h5>
-                    </div>
-                </div>
-                   
-            </div>
-                                  
-                </div>
-            </div>
-        </section>
-
-
-        <section>
-            <section id = "contact">
-                <div class = "container">
-                    <h1> Contact</h1>
-            <div class = "contact-content">
-                <div class = "media">
-                    <a href= "mailto:s35chiu@uwaterloo.ca"><i class="fas fa-envelope-square"></i></a>
-                    <a href = "https://www.facebook.com/skylerchiuu/" target = "blank"><i class="fab fa-facebook-square"></i></a>
-                    <a href = "https://www.instagram.com/skyler.chiuu/" target = "blank"> <i class="fab fa-instagram-square"></i></a>
-                    <a href = "https://twitter.com/skyler_chiu" target = "blank"><i class="fab fa-twitter-square"></i></a>
-                    <a href = "https://www.linkedin.com/in/skyler-chiu/" target ="_blank"><i class="fab fa-linkedin"></i> </a>
-                </div>
-
-            </div>
-
-
-                </div>
-            </section>
-        </section>
-
-                <section id = "footer">
-                    <div class = "container">
-                        <div class = "footer-left">  
-                        </div>
-                        <div class = "footer-right">
-                            <p>Built from scratch by Skyler Chiu © 2020 </p>
-                        </div>
-                    </div>
-
-               
-            </section>
- 
-    
+              </li>                    
+            </ul>
+          </div>        
         </div>
-    </body>
+      </nav>
+      
+      <div class="text-center tm-hero-text-container">
+        <div class="tm-hero-text-container-inner">
+            <h2 class="tm-hero-title">SKYLER CHIU</h2>
+            <p class="tm-hero-subtitle">
+              -- A Little Bit About Me -- 
+              <br />
+            </p>
+        </div>        
+      </div>
+
+      <div class="tm-next tm-intro-next">
+        <a href="#introduction" class="text-center tm-down-arrow-link">
+          <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
+        </a>
+      </div>      
+    </section>
+
+    <section id="introduction" class="tm-section-pad-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class = "image-container">
+            <img src="css/images/profile.png" alt="Image" class="intro-image" />
+          </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tm-intro-text-container">
+                <h2 class="tm-text-primary mb-4 tm-section-title-intro">Introduction</h2>
+                <p class="mb-4 tm-intro-text">
+                  Hello! My name is Skyler Chiu and I am a first-year Sytems Design Engineering Student at the University of Waterloo, currently working as a Web Developer Intern at Netact Services Inc. 
+                  Aside from school and work, I spend most of my spare time selling the newest hyped sneakers, learning programming languages off YouTube or staring at stock prices on Yahoo Finance. When I am able to go outside,
+                  you will often find me coaching badminton at my local club, or playing basketball and Ultimate Frisbee with my friends at the park. 
+
+                  
+              </p>
+                <p class="mb-5 tm-intro-text">
+                  I love meeting new people, and so feel free to send me a message! 
+              </p>
+              <div class = "media-container">
+              <div class = "media-intro">
+                <a href= "mailto:s35chiu@uwaterloo.ca"><i class="fas fa-envelope"></i></a>
+                <a href = "https://www.instagram.com/skyler.chiuu/" target = "blank"> <i class="fab fa-instagram"></i></a>
+                <a href = "https://www.facebook.com/skylerchiuu/" target = "blank"><i class="fab fa-facebook"></i></a>
+                <a href = "https://www.linkedin.com/in/skyler-chiu/" target ="_blank"><i class="fab fa-linkedin"></i> </a>
+              </div>
+            </div>
+                <!--<div class="tm-next">
+                  <a href="#work" class="tm-intro-text tm-btn-primary">Read More</a>
+                </div>-->
+            </div>
+          </div>
+        </div>
+
+        <div class="row tm-section-pad-top">
+          <div class="col-lg-4">
+            <i class="fas fa-4x fa-basketball-ball text-center tm-icon"></i>
+            <h4 class="text-center tm-text-primary mb-4">Basketball</h4>
+            <p style="text-align:center;">
+              From playing the sport to watching it, I love everything about basketball. Let's Go Raptors!
+            </p>
+          </div>
+        
+        <div class="col-lg-4 mt-5 mt-lg-0">
+          <i class="fas fa-4x fa-code text-center tm-icon"></i>
+          <h4 class="text-center tm-text-primary mb-4">Development</h4>
+          <p  style="text-align:center;">
+            HTML, CSS, Java and now learning Python, C++ and JavaScipt
+          </p>
+        </div>
+        <div class="col-lg-4 mt-5 mt-lg-0">
+          <i class="fas fa-4x fa-chart-line text-center tm-icon"></i>
+          <h4 class="text-center tm-text-primary mb-4">Stock Trading</h4>
+          <p style = "text-align:center;">
+            To the moon?
+          </p>
+        </div>
+        <div class="col-lg-4 mt-5 mt-lg-0">
+          <i class="fas fa-4x fa-chalkboard-teacher text-center tm-icon"></i>
+          <h4 class="text-center tm-text-primary mb-4">Cycling</h4>
+          <p style ="text-align:center;">
+            Weeeeeeeeeeeeeeeee
+          </p>
+        </div>
+        <div class="col-lg-4 mt-5 mt-lg-0">
+          <i class="fas fa-4x fa-language text-center tm-icon"></i>
+          <h4 class="text-center tm-text-primary mb-4">Gaming</h4>
+          <p>
+            Pokemon, Minecraft
+          </p>
+        </div>
+        <div class="col-lg-4 mt-5 mt-lg-0">
+          <i class="fas fa-4x fa-tshirt text-center tm-icon"></i>
+          <h4 class="text-center tm-text-primary mb-4"> Streetwear</h4>
+          <p>
+            
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+            <!--Projects-->
+    <section id="work" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+
+
+              <h2 class="tm-text-primary tm-section-title mb-4">Projects</h2>
+              <p class="mx-auto tm-work-description">
+                Some of the things I do when I'm not busy 
+              </p>
+          </div>            
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="https://github.com/skylerchiu/The-Stock-Em-Robot"  target = "_blank">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="css/images/stocks.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h2><i>The <span>Stock' Em</span> Robot</i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="https://www.instagram.com/shoedog_to/?hl=en" target = "_blank">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="css/images/shoedog.PNG" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Shoe<span>Dog</span> Toronto</i></h2>
+                            
+                          </figcaption>
+                          
+                        </figure>
+                      </a>
+                      <a href="img/gallery-img-03.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="css/images/virtualwonders.JPG" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Virtuals <span>Wonders</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+
+                      <a href="https://github.com/skylerchiu/Tic-Tac-Toe" target = "_blank">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="css/images/TicTacToe.png" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Tic <span>Tac</span>Toe</i></h2>
+                      
+                          </figcaption>
+                        </figure>
+                      </a>
+
+                    </div>
+                </div>                
+            </div>        
+          </div>
+      </div>
+    </section>
+
+    <section id="work" >
+      <div class="container tm-container-gallery">
+        <div class="row">
+            <div class="col-12">
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="https://github.com/skylerchiu/Pong" target="_blank">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="css/images/Pong.png" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Python <span>Pong</span> Recreation</i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="https://github.com/skylerchiu/skylerchiu.me" target = "_blank">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="css/images/website.JPG" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h2><i>This<span> <br>Website</span></i></h2>
+                            
+                          </figcaption>
+                          
+                        </figure>
+                      </a>
+                      <a href="img/gallery-img-03.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="css/images/flappy.JPG" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Virtuals <span>Wonders</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/gallery-img-04.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="css/images/TicTacToe.png" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h2><i><a href = ""></a>Tic <span>Tac</span>Toe</i></h2>
+                      
+                          </figcaption>
+                        </figure>
+                      </a>
+
+                    </div>
+                </div>                
+            </div>        
+          </div>
+      </div>
+    </section>
+<section id="resume" class="tm-section-pad-top">
+    <section  class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 class="tm-text-primary tm-section-title mb-4">Resume</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Skyler Chiu</h4>
+              <p><em>Enthusiastic with a love for people, skilled in all aspects of managing events, leading different roles and more importantly, being a people-oriented person helps me to maximize my communication skills.</em></p>
+              <ul>
+                <li>Markham, Ontario</li>
+                <li><a href= "mailto:s35chiu@uwaterloo.ca">s35chiu@uwaterloo.ca</a></li>
+                <div class = "media">
+                  <a href = "https://www.linkedin.com/in/skyler-chiu/" target ="_blank"><i class="fab fa-linkedin"></i> </a>
+                  <a href= "mailto:s35chiu@uwaterloo.ca"><i class="fas fa-envelope-square"></i></a>
+      
+                </div>
+              </ul>
+            </div>
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Web Developer</h4>
+              <h5>January 2021 - Present</h5>
+              <p><em>Netact Services Inc. - Mississauga, Ontario</em></p>
+
+              <ul>
+                <li>Developed websites utilized for e-commerce businesses utilizing <strong>HTML, CSS, PHP </strong> and <strong>Javascript.</strong></li>
+                <li>Managed company databases and hosting services with <strong>mySQL and XAMPP</strong> </li>
+                <li>Implemented new features in an <strong>Angular</strong> patient facing web application.</li>
+              </ul>
+            </div>
+
+
+
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Systems Design Engineering</h4>
+              <h5>2020 - 2025</h5>
+              <p><em>University of Waterloo, Waterloo, ON</em></p>
+              <ul>
+                <li>95% cumulative average </li>
+                <li>Relevant courses: Introduction to Design (SYDE 161), Digital Computation (SYDE 121)</li>
+                <li>Candidate for Bachelors of Applied Science</li>
+              </ul>           
+             </div>
+        <!--    <div class="resume-item">
+              <h4>Highschool Diploma</h4>
+              <h5>2016 - 2020</h5>
+              <p><em>Jacob Hespeler, Cambridge, ON</em></p>
+              <ul>
+                <li>Acquired the President’s Scholarship for 95% cumulative average.</li>
+                <li>Achieved Honor Roll 4 times consecutively</li>
+                <li>Founder of Multicultural Club and established the first Prayer Room.</li>
+              </ul>             
+            </div> -->
+            <h3 class="resume-title">Honours & Awards</h3>
+            <div class="resume-item">
+              <h4>DECA Ontario Provincial Champion</h4>
+              <p><em>DECA Ontario</em></p>
+
+              <ul>
+                <li>Placed <strong>1st </strong>in the DECA Ontario Case Competition in the Integrated Marketing Campaign - Product (IMCP) event out of <strong>7500+ competitors</strong> and qualified for the International Career Development Conference</li>
+
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>DECA Ontario Provincial Champion</h4>
+              <p><em>DECA Ontario</em></p>
+
+              <ul>
+                <li>Placed <strong>1st </strong>in the DECA Ontario Case Competition in the Integrated Marketing Campaign - Product (IMCP) event out of <strong>7500+ competitors</strong> and qualified for the International Career Development Conference</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+  </section>
+
+  <!--Gallery-->
+  					<!-- Carousel -->
+            
+      <section id="photos" class="tm-section-pad-top">
+        <div class="section-title">
+          <h2 class="tm-text-primary tm-section-title mb-4">Photo Gallery</h2>
+        </div>
+				<section class="carousel">
+          
+					<div class="reel">
+            
+						<article id="gallery1" >
+							<a href="css/images/gallery1.jpg" target = "_blank" class="image featured"><img src="css/images/gallery1.jpg" alt="" /></a>
+						</article>
+						
+            <article id="gallery2" >
+							<a href="css/images/gallery2.jpg" target = "_blank" class="image featured"><img src="css/images/gallery2.jpg" alt="" /></a>
+						</article>
+
+            <article id="gallery2" >
+							<a href="css/images/gallery3.jpg" target = "_blank" class="image featured"><img src="css/images/gallery3.jpg" alt="" /></a>
+						</article>
+
+						<article id="gallery4" >
+							<a href="css/images/gallery4.jpg" target = "_blank" class="image featured"><img src="css/images/gallery4.jpg" alt="" /></a>
+						</article>
+
+						<article id="gallery5" >
+							<a href="css/images/gallery5.jpg" target = "_blank" class="image featured"><img src="css/images/gallery5.jpg" alt="" /></a>
+						</article>
+
+						<article id="gallery6" >
+							<a href="css/images/gallery6.jpg" target = "_blank" class="image featured"><img src="css/images/gallery6.jpg" alt="" /></a>
+						</article>
+
+            <article id="gallery7" >
+							<a href="css/images/gallery7.jpg" target = "_blank" class="image featured"><img src="css/images/gallery7.jpg" alt="" /></a>
+						</article>
+
+					</div>
+				</section>
+        <section class="carousel">
+					<div class="reel">
+
+						<article id="gallery2-11" >
+							<a href="css/images/gallery2-1.jpg" target = "_blank" class="image featured"><img src="css/images/gallery2-1.jpg" alt="" /></a>
+						</article>
+						
+            <article id="gallery2" >
+							<a href="css/images/gallery2.jpg" target = "_blank" class="image featured"><img src="css/images/gallery2.jpg" alt="" /></a>
+						</article>
+
+            <article id="gallery2" >
+							<a href="css/images/gallery3.jpg" target = "_blank" class="image featured"><img src="css/images/gallery3.jpg" alt="" /></a>
+						</article>
+
+						<article id="gallery4" >
+							<a href="css/images/gallery4.jpg" target = "_blank" class="image featured"><img src="css/images/gallery4.jpg" alt="" /></a>
+						</article>
+
+						<article id="gallery5" >
+							<a href="css/images/gallery5.jpg" target = "_blank" class="image featured"><img src="css/images/gallery5.jpg" alt="" /></a>
+						</article>
+
+						<article id="gallery6" >
+							<a href="css/images/gallery6.jpg" target = "_blank" class="image featured"><img src="css/images/gallery6.jpg" alt="" /></a>
+						</article>
+
+            <article id="gallery7" >
+							<a href="css/images/gallery7.jpg" target = "_blank" class="image featured"><img src="css/images/gallery7.jpg" alt="" /></a>
+						</article>
+
+					</div>
+				</section>
+      </section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="tm-section-pad-top tm-parallax-2">
+      <div class="container tm-container-contact">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4 tm-section-title">Contact Me!
+                </h2>
+                <div class="mb-5 tm-underline">
+                  <div class="tm-underline-inner"></div>
+                </div>
+                <p class="mb-5">
+                  
+                </p>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+              <a href="tel:0100200340" class="tm-contact-item-link">
+                  <i class="fas fa-3x fa-phone mr-4"></i>
+                  <span class="mb-0">647-929-8507</span>
+              </a>              
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+              <a href="mailto:info@company.co" class="tm-contact-item-link">
+                  <i class="fas fa-3x fa-envelope mr-4"></i>
+                  <span class="mb-0">skyler.chiu@uwaterloo.ca</span>
+              </a>              
+            </div>
+
+
+        </div>
+      </div>
+      <footer class="text-center small tm-footer">
+          <p class="mb-0">
+            Copyright &copy; 2021 Skyler Chiu
+          </p>
+        </footer>
+    </section>
+    <script src="js/jquery-1.9.1.min.js"></script>     
+    <script src="slick/slick.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
+
+  <!--  <script src="js/jquery.min.js"></script>-->
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/jquery.scrollex.min.js"></script>
+    <script src="js/browser.min.js"></script>
+    <script src="js/breakpoints.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+function getOffSet(){
+        var _offset = 450;
+        var windowHeight = window.innerHeight;
+
+        if(windowHeight > 500) {
+          _offset = 400;
+        } 
+        if(windowHeight > 680) {
+          _offset = 300
+        }
+        if(windowHeight > 830) {
+          _offset = 210;
+        }
+
+        return _offset;
+      }
+
+      function setParallaxPosition($doc, multiplier, $object){
+        var offset = getOffSet();
+        var from_top = $doc.scrollTop(),
+          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
+        $object.css({"background-position" : bg_css });
+      }
+
+      // Parallax function
+      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+      var background_image_parallax = function($object, multiplier, forceSet){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        // $object.css({"background-attatchment" : "fixed"});
+
+        if(forceSet) {
+          setParallaxPosition($doc, multiplier, $object);
+        } else {
+          $(window).scroll(function(){          
+            setParallaxPosition($doc, multiplier, $object);
+          });
+        }
+      };
+
+      var background_image_parallax_2 = function($object, multiplier){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        $object.css({"background-attachment" : "fixed"});
+        $(window).scroll(function(){
+          var firstTop = $object.offset().top,
+              pos = $(window).scrollTop(),
+              yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
+
+          var bg_css = 'center ' + yPos + 'px';
+
+          $object.css({"background-position" : bg_css });
+        });
+      };
+      
+      $(function(){
+        // Hero Section - Background Parallax
+        background_image_parallax($(".tm-parallax"), 0.30, false);
+        background_image_parallax_2($("#contact"), 0.80);   
+        
+        // Handle window resize
+        window.addEventListener('resize', function(){
+          background_image_parallax($(".tm-parallax"), 0.30, true);
+        }, true);
+
+        // Detect window scroll and update navbar
+        $(window).scroll(function(e){          
+          if($(document).scrollTop() > 120) {
+            $('.tm-navbar').addClass("scroll");
+          } else {
+            $('.tm-navbar').removeClass("scroll");
+          }
+        });
+        
+        // Close mobile menu after click 
+        $('#tmNav a').on('click', function(){
+          $('.navbar-collapse').removeClass('show'); 
+        })
+
+        // Scroll to corresponding section with animation
+        $('#tmNav').singlePageNav();        
+        
+        // Add smooth scrolling to all links
+        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 400, function(){
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+        // Pop up
+        $('.tm-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery: { enabled: true }
+        });
+
+        // Gallery
+        $('.tm-gallery').slick({
+          dots: true,
+          infinite: false,
+          slidesToShow: 5,
+          slidesToScroll: 2,
+          responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+        });
+      });
+    </script>
+  </body>
 </html>
-
-<script>
-    function myFunction() {
-  var x = document.getElementById("myNavbar");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
-  }
-}
-
-</script>
