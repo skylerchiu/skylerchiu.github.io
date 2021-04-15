@@ -32,7 +32,7 @@ a:focus {
 }
 
 .tm-section-pad-top {
-  padding-top: 135px;
+  padding-top: 100px; 
 }
 
 .tm-text-primary {
@@ -196,6 +196,10 @@ a:focus {
   padding:none;
 }
 
+.col-lg-4{
+  padding-top: 6vh;
+}
+
 @media (max-height: 480px) {
   .tm-hero-text-container-inner {
     margin-top: -40px;
@@ -236,8 +240,14 @@ a:focus {
 .tm-section-title-intro{
   font-size: 2.6rem;
   font-weight: normal;
-  text-align: left;
+
 }
+@media(max-width:600px){
+  .tm-section-title-intro{
+    text-align: center;
+  }
+}
+
 
 
 .tm-intro-text {
@@ -372,6 +382,15 @@ a:focus {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media (max-width: 680px){
+  figure.effect-honey{
+    margin-top: 2vh;
+  }
+  figure.section_head{
+    margin-top: -6vh;
+  }
+}
+
 .grid figure img {
   position: relative;
   display: block;
@@ -384,10 +403,12 @@ a:focus {
 .grid figure figcaption {
   padding: 2em;
   color: #fff;
-  text-transform: uppercase;
+ /* text-transform: uppercase;*/
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  text-align: center;
+  align-items: center;
 }
 
 .grid figure figcaption::before,
@@ -408,7 +429,7 @@ a:focus {
 /* For some effects it will show as a button */
 .grid figure figcaption > a {
   z-index: 1000;
-  text-indent: 200%;
+  text-indent:100%;
   white-space: nowrap;
   font-size: 0;
   opacity: 0;
@@ -417,20 +438,48 @@ a:focus {
 .grid figure h2 {
   word-spacing: -0.15em;
   font-weight: 300;
+  font-size: 2vh;
 }
 
 .grid figure h2 span {
   font-weight: 800;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4.5vh;
+}
+
+@media (max-width: 600px){
+  .grid figure h2 {
+  color: transparent;
+top:6vh;
+
+  
+  }
+  .grid figure h2 span{
+  color: white;
+
+  }
 }
 
 .grid figure h2,
 .grid figure p {
   margin: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid figure p {
   letter-spacing: 1px;
   font-size: 68.5%;
+}
+
+
+
+.grid figure i{
+  text-align: center;
+  align-items: center;
 }
 /*---------------*/
 /***** Honey *****/
@@ -441,6 +490,9 @@ figure.effect-honey {
 }
 
 
+figure.effect-honey h2{
+  text-align: center;
+}
 
 
 
@@ -451,7 +503,7 @@ figure.effect-honey img {
 }
 
 figure.effect-honey:hover img {
-  opacity: 0.5;
+  opacity: 0.35;
 }
 
 
@@ -466,14 +518,30 @@ figure.effect-honey figcaption::before {
   -webkit-transform: translate3d(0, 10px, 0);
   transform: translate3d(0, 10px, 0);
 }
+
+@media (max-width:600px){
+  figure.effect-honey h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 12vh;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+}
+
 @media (min-width: 600px){
 figure.effect-honey h2 {
   position: absolute;
-  bottom: 0;
+  bottom: 6vh;
+  padding-bottom: 6vh;
   left: 0;
   padding: 1em 1.5em;
   width: 100%;
-  text-align: left;
+  text-align: center;
   -webkit-transform: translate3d(0, -30px, 0);
   transform: translate3d(0, -30px, 0);
 }
@@ -481,6 +549,7 @@ figure.effect-honey h2 {
 figure.effect-honey h2 i {
   font-style: normal;
   opacity: 0;
+  text-align: center;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(0, -30px, 0);
@@ -606,14 +675,19 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  /*background-image: url(../img/the-town-bg-02.jpg);*/
-  background-color: #050d18;
+  background-image: url(images/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 850px;
+  min-height: 750px;
   position: relative;
   padding-bottom: 50px;
   padding-top: 160px;
+}
+
+@media (max-width:600px){
+  #contact{
+    background-color: white;
+  }
 }
 
 .tm-underline {
@@ -623,10 +697,13 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-underline-inner {
-  width: 25%;
-  height: 8px;
+  width: 100%;
+  height: 5px;
   background: white;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .tm-contact-item {
   margin-bottom: 75px;
@@ -678,10 +755,12 @@ figure.effect-honey:hover h2 i {
 
 .tm-footer {
   position: absolute;
-  bottom: 35px;
+  bottom: 0px;
   left: 0;
   right: 0;
-  padding: 0 15px;
+  padding: 15px 15px 15px 15px;
+  background-color: transparent;
+
 }
 
 .tm-footer-link {
@@ -794,7 +873,9 @@ p {
 
 /*gallery*/
 
-
+#photos{
+  padding-bottom: 8%;
+}
 .carousel article:hover {
 
   cursor: pointer;
@@ -907,7 +988,7 @@ p {
     }
 
     .carousel .forward:hover:before, .carousel .backward:hover:before {
-      background-color: #a1e3df;
+      background-color: #3496d8;
     }
 
   .carousel .forward {
