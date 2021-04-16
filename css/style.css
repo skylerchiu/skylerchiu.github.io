@@ -276,6 +276,17 @@ a:focus {
 
 }
 
+@media (max-width:600px){
+  .media-intro a {
+    color: black;
+    margin:auto;
+    align-items: center;
+    text-align: center;
+    font-size: 8vh;
+  
+  }
+  
+}
 .media-intro a:hover {
   color: #3496d8;
   transition: fade 0.5s;
