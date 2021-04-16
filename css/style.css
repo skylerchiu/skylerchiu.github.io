@@ -706,12 +706,12 @@ figure.effect-honey:hover h2 i {
   background-attachment:scroll; 
 }
 
-@media (max-width:600px){
+/*@media (max-width:600px){
   #contact{
     background-color: white;
   }
 }
-
+*/
 .tm-underline {
   border-top: 2px solid white;
   height: 8px;
