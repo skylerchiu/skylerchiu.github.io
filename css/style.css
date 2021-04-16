@@ -486,7 +486,17 @@ top:6vh;
 /*---------------*/
 figure.effect-honey {
   background: black;
-  max-width: 36.47214854111406vh;
+  max-width: 36vh/*36.47214854111406vh*/;
+}
+
+@media (min-width:600px){
+
+.tm-gallery{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom:-15vh;  
+
+}
 }
 
 
