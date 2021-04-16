@@ -692,6 +692,7 @@ figure.effect-honey:hover h2 i {
   position: relative;
   padding-bottom: 50px;
   padding-top: 160px;
+  background-attachment:scroll; 
 }
 
 @media (max-width:600px){
