@@ -765,7 +765,15 @@ figure.effect-honey:hover h2 i {
 .tm-contact-item-link:hover span {
   color: #1f5297;
 }
+@media (max-width: 600px){
 
+  .tm-contact-item-link i,
+  .tm-contact-item-link span {
+    color: #1f5297;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+}
 .tm-input {
   padding: 8px 25px;
   border-radius: 3px;
